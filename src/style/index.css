@@ -1,0 +1,24 @@
+body {
+  display: grid;
+  grid-template-areas: "header header" "aside main" "aside main";
+}
+body header {
+  grid-area: header;
+}
+body main {
+  display: contents;
+}
+
+aside {
+  grid-area: aside;
+}
+
+.hero {
+  grid-area: main;
+}
+
+.categories {
+  display: flex;
+}
+
+/*# sourceMappingURL=index.css.map */
