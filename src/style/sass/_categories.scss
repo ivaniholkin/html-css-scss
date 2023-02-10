@@ -2,8 +2,10 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
     overflow-x:auto;
-    overflow-y: hidden;
+    height: 3rem;
     &::-webkit-scrollbar{
         display: none;
     }

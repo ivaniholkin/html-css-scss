@@ -3,9 +3,47 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: lightgrey;
+    max-width: 200px;
+    position: sticky;
+    top: 82px;
    ul{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow-y: scroll;
    }
+   ul::-webkit-scrollbar{
+    display: none;
+   }
+   
+
+}
+
+.social{
+    background-color: rgb(144, 141, 141);
+        border: 10px solid lightgray;
+    p::selection{
+        background-color: orange;
+        color:white;
+        
+    }
+    .social-group{
+        display: flex;
+        flex-direction: row;
+        
+        li{
+            a{
+                display: block;
+            }
+            a:hover{
+                .icon{
+                   fill: blue; 
+                }
+            }
+        }
+    }
+}
+.icon{
+    width: 3rem;
 }

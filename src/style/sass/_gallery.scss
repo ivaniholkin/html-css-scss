@@ -1,4 +1,10 @@
-video{
-    width: 200px;
-    height: 200px;
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    &-item{
+        img{
+            width: 100%;
+        }
+    }
 }
