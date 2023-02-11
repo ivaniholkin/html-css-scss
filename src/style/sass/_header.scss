@@ -1,25 +1,122 @@
-header{
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 0px 10px 0px rgba(81, 81, 81, 0.47);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  z-index: 7;
+  .header-logo {
+    font-size: 2rem;
+    color: orange;
+    height: 100%;
     display: flex;
+    align-items: center;
+    .icon {
+      height: 100%;
+    }
+  }
+  .menu{
+    display: flex;
+    gap: 2rem;
+    .bell{
+        width: 1.5rem;
+        height: 2rem;
+        fill: lightgrey;
+        stroke: lightgray;
+    }
+    .bell:hover{
+        fill: darkgray;
+        filter: drop-shadow(2px 2px 2px orange);
+    }
+  }
+}
+
+input[type="search"] {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  width: 30vw;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+input[type="search"]:hover {
+  border: 1px solid orange;
+}
+.search-form {
+  position: relative;
+}
+.search-icon {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  height: calc(100% - 2px);
+  fill: none;
+  background-color: lightgray;
+  width: 14px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+.micro {
+  position: absolute;
+  top: 1px;
+  right: -48px;
+  height: calc(100% - 2px);
+  fill: lightgray;
+  width: 14px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+.micro:hover {
+  fill: grey;
+  filter: drop-shadow(2px 2px 2px orange);
+}
+
+.dropdown {
+  position: relative;
+  padding-right: 20px;
+  .dropbtn {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: orange;
+    .profile {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: lightgray;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
     width: 100%;
-    justify-content: space-between;
-    align-items:center;
-    height: 80px;
-    position: sticky;
-    top: 0;
-    box-shadow: 0px 0px 10px 0px rgba(81, 81, 81, 0.47);
-    background-color:transparent;
-    backdrop-filter: blur(10px);
-    z-index: 7;
-    .header-logo{
-        display: flex;
-        a{
-            font-size: 2rem;
-            color:orange;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    a {
+      display: block;
+      color: #000000;
+      padding: 5px;
+      text-decoration: none;
+    }
+  }
+  &:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    a{
+        // display: flex;
+        .icon{
+            display: block;
+            width: 1.5rem;
+            height: 1.5rem;
         }
     }
-}
-input[type=search]{
-    background-color:transparent;
-    backdrop-filter: blur(10px); 
-    width: 30vw;
+  }
 }

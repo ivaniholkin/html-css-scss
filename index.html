@@ -15,18 +15,43 @@
   </head>
   <body>
     <header>
-      <div class="header-logo">
-        <svg class="icon">
-            <use xlink:href="./src/image/catSvg/_sprite.svg#logoCat"></use>
-        </svg>
-        <a href=""> Bulka TV</a>
-      </div>
+        <a class="header-logo" href="">
+          <svg class="icon">
+          <use xlink:href="./src/image/catSvg/_sprite.svg#logoCat"></use>
+          </svg>Bulka TV</a>
       <div class="header-search">
-        <form action="">
+        <form action="" class="search-form">
           <input type="search" placeholder="Search" />
+          <svg class="icon search-icon">
+            <use xlink:href="./src/image/catSvg/_sprite.svg#search"></use>
+          </svg>
+          <svg class="icon micro">
+            <use xlink:href="./src/image/catSvg/_sprite.svg#micro"></use>
+          </svg>
         </form>
       </div>
-      <div class="header-drop"></div>
+      <div class="menu">
+        <svg class="icon bell">
+          <use xlink:href="./src/image/catSvg/_sprite.svg#bell"></use>
+        </svg>
+        <div class="dropdown">
+          <button type="button" class="dropbtn">
+            <svg class="icon profile">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#profile"></use>
+            </svg>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">
+              <svg class="icon profile">
+                <use xlink:href="./src/image/catSvg/_sprite.svg#catHead7"></use>
+              </svg>
+              Profile
+            </a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <aside>
