@@ -25,6 +25,7 @@
 
     .card {
       position: absolute;
+      display: block;
       width: 80%;
       height: 100%;
       left: 0;
@@ -36,15 +37,35 @@
       display: flex;
       gap: 1rem;
       box-shadow: 5px 15px 15px 0px rgba(81, 81, 81, 0.47);
-
+      .live{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        color:aliceblue;
+        background-color: red;
+        padding: 5px;
+        border-radius: 3px;
+        animation: pulse 2s infinite;
+        cursor: pointer;
+}   
+      .play-icon{
+       
+              position: absolute;
+                top: 50%;
+                right: 65%;
+                width: 2rem;
+                height: 2rem;
+                fill: antiquewhite;
+                opacity: 0;   
+                cursor: pointer;
+      }
       img {
         position: relative;
         width: 70%;
-        // min-width: 360px;
         height: 100%;
-        min-height: 400px;
+        min-height: 200px;
         border-radius: 10px;
-        object-fit:scale-up;
+    
         aspect-ratio: 16/9;
         box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
       }
@@ -86,7 +107,10 @@
     }
   }
 }
-
+.card:hover  .play-icon{
+  animation:play 2s infinite;
+  opacity: 1;
+}
 
 #item-1:checked ~ .cards #cat-3, #item-2:checked ~ .cards #cat-1, #item-3:checked ~ .cards #cat-2 {
   transform: translatex(-40%) scale(.8);

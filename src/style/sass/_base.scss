@@ -8,16 +8,6 @@ a {
 img {
   &:hover {
     filter: brightness(50%);
-    position: relative;
-    // &::after{
-    //   content: "fg";
-    //   position: absolute;
-    //   width: 1rem;
-    //   height: 1rem;
-    //   top: 15px;
-    //   right: 15px;
-    //   background-color: aqua;
-    // }
   }
 
 }
