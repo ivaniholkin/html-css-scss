@@ -21,7 +21,7 @@
           </svg>Bulka TV</a>
       <div class="header-search">
         <form action="" class="search-form">
-          <input type="search" placeholder="Search" />
+          <input type="search" placeholder="Search" aria-label="Search" />
           <svg class="icon search-icon">
             <use xlink:href="./src/image/catSvg/_sprite.svg#search"></use>
           </svg>
@@ -47,29 +47,136 @@
               </svg>
               Profile
             </a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">
+              <svg class="icon setting">
+                <use xlink:href="./src/image/catSvg/_sprite.svg#setting"></use>
+              </svg>
+              Settings
+            </a>
+            <a class="exit" href="#">
+              <svg class="icon logOut">
+                <use xlink:href="./src/image/catSvg/_sprite.svg#logOut"></use>
+              </svg>
+              Log Out
+            </a>
           </div>
         </div>
       </div>
     </header>
     <main>
       <aside>
-        <ul>
-          <li><a href="">chuchu</a></li>
-          <li><a href="">chuchu</a></li>
-          <li><a href="">chuchu</a></li>
-          <li><a href="">chuchu</a></li>
-          <li><a href="">chuchu</a></li>
-          <li><a href="">chuchu</a></li>
-          <li><a href="">chuchu</a></li>
-          <li><a href="">chuchu</a></li>
-          <li><a href="">chuchu</a></li>
-          <li><a href="">chuchu</a></li>
-          <li><a href="">chuchu</a></li>
+        <ul class="channel">
+          <li class="channel-item">
+            <svg class="icon setting">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead1"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">ChuChu</a>
+              <span class="count">5.3K</span>
+            </div>
+          </li>
+          <li class="channel-item">
+            <svg class="icon">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead2"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">ChuChu</a>
+              <span class="count">5.3K</span>
+            </div>
+          </li>
+          <li class="channel-item">
+            <svg class="icon">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead3"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">LoLO</a>
+              <span class="count">5.3K</span>
+            </div>
+          </li>
+          <li class="channel-item">
+            <svg class="icon">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead4"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">LoPo</a>
+              <span>5.3K</span>
+            </div>
+          </li>
+          <li class="channel-item">
+            <svg class="icon">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead5"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">KaNu</a>
+              <span class="count">5.3K</span>
+            </div>
+          </li>
+          <li class="channel-item">
+            <svg class="icon">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead6"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">ChuChu</a>
+              <span>5.3K</span>
+            </div>
+          </li>
+          <li class="channel-item">
+            <svg class="icon">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead7"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">ChuChu</a>
+              <span class="count">5.3K</span>
+            </div>
+          </li>
+          <li class="channel-item">
+            <svg class="icon">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead8"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">CHuLi</a>
+              <span>5.3K</span>
+            </div>
+          </li>
+          <li class="channel-item">
+            <svg class="icon">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead2"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">FaFa</a>
+              <span class="count">5.3K</span>
+            </div>
+          </li>
+          <li class="channel-item">
+            <svg class="icon setting">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead1"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">ChuChu</a>
+              <span class="count">5.3K</span>
+            </div>
+          </li>
+          <li class="channel-item">
+            <svg class="icon setting">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead1"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">ChuChu</a>
+              <span class="count">5.3K</span>
+            </div>
+          </li>
+          <li class="channel-item">
+            <svg class="icon setting">
+              <use xlink:href="./src/image/catSvg/_sprite.svg#catHead1"></use>
+            </svg>
+            <div class="item-counter">
+              <a class="nickName" href="">ChuChu</a>
+              <span class="count">5.3K</span>
+            </div>
+          </li>
         </ul>
         <div class="social">
-          <p>Join the Bulkas community</p>
+          <p>Join the Bulkas community!</p>
           <ul class="social-group">
             <li><a href="">
                 <svg class="icon">
@@ -110,7 +217,7 @@
           <li class="categories-item"><a href="">food</a></li>
           <li class="categories-item"><a href="">food</a></li>
         </ul>
-        <div class="carousel">
+        <section class="carousel">
           <input type="radio" name="slider" id="item-1" checked />
           <input type="radio" name="slider" id="item-2" />
           <input type="radio" name="slider" id="item-3" />
@@ -119,50 +226,214 @@
               <img
                 src="/src/image/boringCat1.jpeg"
                 alt="cat" />
-                <span>I`m stuck</span>
+                <div class="cantainer">
+                  <div class="carousel-meta">
+                    <svg class="carousel-icon">
+                      <use xlink:href="./src/image/catSvg/_sprite.svg#catHead1"></use>
+                    </svg>
+                    <a class="meta" href="">I`m stuck
+                      <span>DoDo</span>
+                    </a>
+                  </div>
+                  <p>Andrew Lloyd Webber's Musical from London's West End CATS, o mais famoso musical de sempre, regressa a Portugal com espectáculos.</p>
+                </div>
             </label>
             <label class="card" for="item-2" id="cat-2">
               <img
                 src="/src/image/boringCat2.webp"
                 alt="cat" />
+                <div class="cantainer">
+                  <div class="carousel-meta">
+                    <svg class="carousel-icon">
+                      <use xlink:href="./src/image/catSvg/_sprite.svg#catHead3"></use>
+                    </svg>
+                    <a class="meta" href="">I`m stuck
+                      <span>DoDo</span>
+                    </a>
+                  </div>
+                  <p>Andrew Lloyd Webber's Musical from London's West End CATS.</p>
+                </div>
             </label>
             <label class="card" for="item-3" id="cat-3">
               <img
                 src="/src/image/boringCat3.webp"
                 alt="cat" />
+                <div class="cantainer">
+                  <div class="carousel-meta">
+                    <svg class="carousel-icon">
+                      <use xlink:href="./src/image/catSvg/_sprite.svg#catHead2"></use>
+                    </svg>
+                    <a class="meta" href="">I`m stuck
+                      <span>DoDo</span>
+                    </a>
+                  </div>
+                  <p>Andrew Lloyd Webber's Musical from London's West End CATS, o mais famoso musical de sempre, regressa a Portugal com espectáculos.</p>
+                </div>
             </label>
           </div>
-        </div>
-        <div class="gallery">
-            <div class="gallery-item">
+        </section>
+        <section class="gallery">
+            <div class="gallery-wrapper" >
+              <div class="gallery-item">
                 <img src="/src/image/galleryCat1.webp" alt="cat">
-                <div class="item-discription"></div>
+                <svg class="play-icon">
+                  <use xlink:href="./src/image/catSvg/_sprite.svg#profile"></use>
+                </svg>
+                <span class="live">LIVE</span>
+                <span class="counts">71.5K viewers</span>
+              </div>
+              <div class="item-discription">
+                <div class="logoWrap">
+                  <svg class="discription-icon">
+                    <use xlink:href="./src/image/catSvg/_sprite.svg#catHead2"></use>
+                  </svg>
+                  <div class="text">
+                    <p>Andrew Lloyd Webber's Musical</p>
+                    <span>ChuChu</span>
+                  </div>
+                </div>
+                <div class="dot"><span>...</span></div>
+              </div>
             </div>
-            <div class="gallery-item">
+            <div class="gallery-wrapper" >
+              <div class="gallery-item">
                 <img src="/src/image/galleryCat2.jpeg" alt="cat">
-                <div class="item-discription"></div>
+                <svg class="play-icon">
+                  <use xlink:href="./src/image/catSvg/_sprite.svg#profile"></use>
+                </svg>
+                <span class="counts">33:44</span>
+              </div>
+              <div class="item-discription">
+                <div class="logoWrap">
+                  <svg class="discription-icon">
+                    <use xlink:href="./src/image/catSvg/_sprite.svg#catHead4"></use>
+                  </svg>
+                  <div class="text">
+                    <p>Andrew Lloyd Webber's Musical</p>
+                    <span>ChuChu</span>
+                  </div>
+                </div>
+                <div class="dot"><span>...</span></div>
+              </div>
             </div>
-            <div class="gallery-item">
-                <img src="/src/image/galleryCat1.webp" alt="cat">
-                <div class="item-discription"></div>
+            <div class="gallery-wrapper" >
+              <div class="gallery-item">
+                <img src="/src/image/galleryCat3.jpeg" alt="cat">
+                <svg class="play-icon">
+                  <use xlink:href="./src/image/catSvg/_sprite.svg#profile"></use>
+                </svg>
+                <span class="live">LIVE</span>
+                <span class="counts">71.5K viewers</span>
+              </div>
+              <div class="item-discription">
+                <div class="logoWrap">
+                  <svg class="discription-icon">
+                    <use xlink:href="./src/image/catSvg/_sprite.svg#catHead6"></use>
+                  </svg>
+                  <div class="text">
+                    <p>Andrew Lloyd Webber's Musical</p>
+                    <span>ChuChu</span>
+                  </div>
+                </div>
+                <div class="dot"><span>...</span></div>
+              </div>
             </div>
-            <div class="gallery-item">
-                <img src="/src/image/galleryCat1.webp" alt="cat">
-                <div class="item-discription"></div>
+            <div class="gallery-wrapper" >
+              <div class="gallery-item">
+                <img src="/src/image/boringCat2.webp" alt="cat">
+                <svg class="play-icon">
+                  <use xlink:href="./src/image/catSvg/_sprite.svg#profile"></use>
+                </svg>
+                <span class="live">LIVE</span>
+                <span class="counts">71.5K viewers</span>
+              </div>
+              <div class="item-discription">
+                <div class="logoWrap">
+                  <svg class="discription-icon">
+                    <use xlink:href="./src/image/catSvg/_sprite.svg#catHead5"></use>
+                  </svg>
+                  <div class="text">
+                    <p>Andrew Lloyd Webber's Musical</p>
+                    <span>ChuChu</span>
+                  </div>
+                </div>
+                <div class="dot"><span>...</span></div>
+              </div>
             </div>
-            <div class="gallery-item">
-                <img src="/src/image/galleryCat1.webp" alt="cat">
-                <div class="item-discription"></div>
+            <div class="gallery-wrapper" >
+              <div class="gallery-item">
+                <img src="/src/image/galleryCat6.jpeg" alt="cat">
+                <svg class="play-icon">
+                  <use xlink:href="./src/image/catSvg/_sprite.svg#profile"></use>
+                </svg>
+                <span class="live">LIVE</span>
+                <span class="counts">71.5K viewers</span>
+              </div>
+              <div class="item-discription">
+                <div class="logoWrap">
+                  <svg class="discription-icon">
+                    <use xlink:href="./src/image/catSvg/_sprite.svg#catHead7"></use>
+                  </svg>
+                  <div class="text">
+                    <p>Andrew Lloyd Webber's Musical</p>
+                    <span>ChuChu</span>
+                  </div>
+                </div>
+                <div class="dot"><span>...</span></div>
+              </div>
             </div>
-            <div class="gallery-item">
-                <img src="/src/image/galleryCat1.webp" alt="cat">
-                <div class="item-discription"></div>
+            <div class="gallery-wrapper" >
+              <div class="gallery-item">
+                <img src="/src/image/galleryCat7.jpeg" alt="cat">
+                <svg class="play-icon">
+                  <use xlink:href="./src/image/catSvg/_sprite.svg#profile"></use>
+                </svg>
+                <span class="live">LIVE</span>
+                <span class="counts">71.5K viewers</span>
+              </div>
+              <div class="item-discription">
+                <div class="logoWrap">
+                  <svg class="discription-icon">
+                    <use xlink:href="./src/image/catSvg/_sprite.svg#catHead3"></use>
+                  </svg>
+                  <div class="text">
+                    <p>Andrew Lloyd Webber's Musical</p>
+                    <span>ChuChu</span>
+                  </div>
+                </div>
+                <div class="dot"><span>...</span></div>
+              </div>
             </div>
-        </div>
-        <footer>
-            <p>inspared by Kittisaurus <a href=""></a></p>
-        </footer>
+            <div class="gallery-wrapper" >
+              <div class="gallery-item">
+                <img src="/src/image/galleryCat8.jpeg" alt="cat">
+                <svg class="play-icon">
+                  <use xlink:href="./src/image/catSvg/_sprite.svg#profile"></use>
+                </svg>
+                <span class="live">LIVE</span>
+                <span class="counts">71.5K viewers</span>
+              </div>
+              <div class="item-discription">
+                <div class="logoWrap">
+                  <svg class="discription-icon">
+                    <use xlink:href="./src/image/catSvg/_sprite.svg#catHead8"></use>
+                  </svg>
+                  <div class="text">
+                    <p>Andrew Lloyd Webber's Musical</p>
+                    <span>ChuChu</span>
+                  </div>
+                </div>
+                <div class="dot"><span>...</span></div>
+              </div>
+            </div>
+        </section>
       </section>
+      <footer>
+        <a href="">Inspared by Kittisaurus <svg class="icon youtube">
+          <use xlink:href="./src/image/catSvg/_sprite.svg#youtube"></use>
+        </svg>
+        </a>
+      </footer>
     </main>
   </body>
 </html>

@@ -2,7 +2,8 @@ body{
     display: grid;
     grid-template-areas: "header header"
                             "aside main"
-                            "aside main";
+                            "aside main"
+                            "aside footer";
     header{
         grid-area: header;
     }

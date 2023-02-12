@@ -4,8 +4,30 @@
     flex-direction: column;
     gap: 50px;
     padding-inline: 20px;
-    footer{
-        text-align: center;
-        padding-block-end: 20px;
-    }
+   min-height: 100vh;
+
+   
 }
+footer{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+            a{
+                display: flex;
+                align-items:center;
+                gap: 1rem;
+                .youtube{
+                    width: 2rem;
+                    height: 2rem;
+                    align-self:center
+                }
+                &:hover{
+                    color:orange;
+                    .youtube{
+                        fill: red;
+                    }
+                }
+            }
+        }

@@ -16,8 +16,10 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
+    padding-left: 20px;
     .icon {
       height: 100%;
+      width: 3rem;
     }
   }
   .menu{
@@ -45,7 +47,8 @@ input[type="search"] {
   border: 1px solid lightgray;
 }
 input[type="search"]:hover {
-  border: 1px solid orange;
+  border: 1px solid hwb(39 58% 31%);
+  filter: drop-shadow(2px 2px 2px orange);
 }
 .search-form {
   position: relative;
@@ -60,6 +63,12 @@ input[type="search"]:hover {
   width: 14px;
   border-radius: 0 3px 3px 0;
   cursor: pointer;
+  &:hover{
+    // background-color:darken($color: lightgray, $amount: 30%) lightgray;
+    background-color: gray;
+    fill: white;
+    filter: drop-shadow(2px 2px 2px orange);
+  }
 }
 .micro {
   position: absolute;
@@ -97,21 +106,38 @@ input[type="search"]:hover {
   .dropdown-content {
     display: none;
     position: absolute;
-    width: 100%;
+    width: 100px;
+    left: -50px;
     overflow: auto;
+    background-color: rgba(0, 0, 0, 0.2);;
+    backdrop-filter: blur(10px);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     a {
-      display: block;
+      display: flex;
       color: #000000;
       padding: 5px;
       text-decoration: none;
+      border:1px solid lightgrey;
+      border-radius: 2px;
+      &:hover{
+        filter: drop-shadow(2px 2px 2px orange);
+       
+      }
+      .icon{
+        fill: darkgray;
+      }
+      .logOut{
+        stroke: red;
+      }
+    }
+    .exit{
+        color:red;
     }
   }
   &:hover .dropdown-content {
     display: flex;
     flex-direction: column;
     a{
-        // display: flex;
         .icon{
             display: block;
             width: 1.5rem;
@@ -120,3 +146,4 @@ input[type="search"]:hover {
     }
   }
 }
+

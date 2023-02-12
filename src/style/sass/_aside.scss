@@ -4,13 +4,14 @@ aside{
     flex-direction: column;
     justify-content: space-between;
     background-color: lightgrey;
-    max-width: 200px;
+    width: 200px;
     position: sticky;
     top: 82px;
-   ul{
+   .channel{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-top: 20px;
     overflow-y: scroll;
    }
    ul::-webkit-scrollbar{
@@ -20,9 +21,81 @@ aside{
 
 }
 
+.channel-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-inline: 0.8rem;
+  
+        .icon{
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            background-color: aliceblue;
+        }
+    
+    .item-counter{
+        display: flex;
+        gap: 3rem;
+        .nickName{
+            text-overflow: ellipsis;
+            width: 2rem;
+           &:hover{
+            color:orange;
+           } 
+        }
+        .count{
+            position: relative;
+            &::before{
+                content:"";
+                width: 4px;
+                height: 4px;
+                top: 40%;
+                left: -10px;
+                background-color: red;
+                border-radius: 50%;
+                position: absolute;
+                animation: pulse 2s infinite ;
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+        filter: contrast(200%);
+    }
+    50%{
+        transform: scale(1);
+        filter: contrast(50%);
+    }
+    75%{
+        transform: scale(1.4);
+        filter: contrast(300%);
+    }
+    0%{
+        transform: scale(1);
+        filter: contrast(100%);
+    }
+}
+
 .social{
     background-color: rgb(144, 141, 141);
         border: 10px solid lightgray;
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        height: 100px;
+    p{
+      width: 100px;  
+      text-align:center ;
+    }    
     p::selection{
         background-color: orange;
         color:white;
@@ -30,20 +103,39 @@ aside{
     }
     .social-group{
         display: flex;
-        flex-direction: row;
+        // flex-direction: row;
         
         li{
+            height: 1rem;
             a{
                 display: block;
+                height: 2rem;
+                .icon{
+                    width: 3rem;
+                    height: 2rem;
+                }
             }
             a:hover{
                 .icon{
-                   fill: blue; 
+                   fill: orange; 
+                //    height: 2rem;
                 }
             }
         }
     }
 }
-.icon{
-    width: 3rem;
+
+
+@media (max-width:1199px){
+    aside{
+        width: 64px;
+    }
+     .social{
+        display:none;
+     }   
+     .channel-item{
+        .item-counter{
+            display: none;
+         }
+     }
 }
